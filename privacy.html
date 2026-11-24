@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー / Privacy Policy — RE:GENESIS Phoenix</title>
+<style>
+  body{margin:0;background:#0a0a0a;color:#f5f0e6;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.8}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 20px 64px}
+  h1{font-size:1.7em;line-height:1.3}
+  h2{margin-top:2em;border-bottom:1px solid #3a2f14;padding-bottom:.3em}
+  h3{margin-top:1.6em}
+  a{color:#f6d365}
+  .meta{color:#cfc4a8}
+  .note{font-size:.85em;color:#9a8f78}
+  footer{margin-top:3em;font-size:.85em;color:#9a8f78}
+  hr{border:none;border-top:1px solid #3a2f14;margin:3em 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p><a href="index.html">← RE:GENESIS Phoenix トップへ</a></p>
+  <h1>プライバシーポリシー / Privacy Policy</h1>
+  <p class="meta">最終更新日 / Last updated：2026年11月25日<br>
+  運営者 / Operator：Fen Works<br>
+  連絡先 / Contact：fenworks.support@gmail.com</p>
+  <p class="note">※法律相談ではなく、設計書 v1.2 の決定事項を文章化したものです。</p>
+
+  <h2>日本語版</h2>
+  <p>RE:GENESIS（以下「本アプリ」）は、習慣の継続を記録し、見守るための iPhone アプリです。本アプリはサーバーを持たず、アカウント登録やログインもありません。</p>
+
+  <h3>1. 収集するデータ — 収集しません</h3>
+  <p>本アプリは、ユーザーの個人データを外部サーバーへ送信・収集しません（App Store の申告では「Data Not Collected」を目指します）。解析ツール、広告 SDK、クラッシュレポートも初版では入れません。</p>
+
+  <h3>2. 保存されるデータと保存場所</h3>
+  <p>次のデータはユーザーの端末内に保存されます。外部の第三者サーバーへ送信されることはありません。</p>
+  <ul>
+    <li>継続日数・開始日・最高記録・挑戦回数などのカウンター情報</li>
+    <li>毎日のチェックイン（衝動の強さ・気分・メモ）</li>
+    <li>見守りチェックへの応答履歴、SOS の利用履歴、リセット理由</li>
+    <li>マイルストーンの達成状況、各種設定（見守り間隔・静かな時間帯・Face ID ロックなど）</li>
+  </ul>
+  <p>保存は SwiftData / UserDefaults を使い、ウィジェットとの共有は同じ端末内の App Groups 経由でのみ行います。</p>
+
+  <h3>2-2. iCloud 同期</h3>
+  <p>カウンター情報・チェックイン・見守り応答履歴は、ユーザーが iCloud にサインインしている場合、Apple の CloudKit を使ってユーザー自身の iCloud プライベートデータベース経由で、同じ Apple アカウントの端末（iPhone / iPad）間でのみ同期されます。この領域にアクセスできるのはユーザー本人だけであり、開発者が記録を見たり取得したりすることはできません。各種設定は同期されず、端末ごとに保存されます。iCloud を無効にしている場合は同期されず、データは端末内のみに保存されます。</p>
+
+  <h3>3. Face ID ロック</h3>
+  <p>Face ID ロックは iOS の LocalAuthentication を使います。生体情報は端末内で処理され、本アプリが取得・保存・送信することはありません。</p>
+
+  <h3>4. 通知</h3>
+  <p>見守りチェックの通知は端末内で完結するローカル通知のみです。通知の文面に習慣の具体名は表示しません。なお、iCloud 同期の合図として Apple のプッシュ基盤（APNs）によるサイレントプッシュを受け取る場合がありますが、これに記録の内容が含まれることはありません。</p>
+
+  <h3>5. 監視モード・プロ（Premium / v2 の機能）</h3>
+  <ul>
+    <li>画面判定は端末内で行い、30秒に1フレームだけ取り込んで判定し、画像はその場で破棄します。画像・画面内容・URL は保存も送信もしません。記録するのは検知時刻のみです。</li>
+    <li>判定はユーザーが手動で開始するブロードキャストでのみ行います。アプリが勝手に画面を見ることはありません。放送中は録画中マークが常に表示されます。</li>
+  </ul>
+
+  <h3>6. DNS ブロック（Premium / v2 の機能）</h3>
+  <p>DNS ブロックは、CleanBrowsing Family または Cloudflare for Families（1.1.1.3）の暗号化 DNS（DoH）へ接続します。自社で DNS サーバーを持たず、DNS ログも保持しません。ただし DNS の問い合わせ自体は選択した外部リゾルバへ届くため、その取り扱いは各リゾルバのポリシーに従います。DNS はドメイン単位のブロックであり、SNS 等の中の投稿までは止められません。</p>
+
+  <h3>7. バックアップ（JSON 書き出し／読み込み）</h3>
+  <p>バックアップはユーザーが設定画面から自分で書き出す場合にのみ作成され、共有シートでユーザーが選んだ場所へ保存されます。読み込みは端末内のデータを置き換えます。自動でクラウドへ送信されることはありません（iPhone 標準の引き継ぎ・バックアップは iOS の仕組みに従います）。</p>
+
+  <h3>8. 課金</h3>
+  <p>Premium の購入・解約・復元は Apple の StoreKit を通じて行います。クレジットカード情報などを本アプリが受け取ることはありません。</p>
+
+  <h3>9. データの削除</h3>
+  <p>設定画面の「全削除」からデータをすべて削除できます（確認は2段階で、削除は取り消せません）。削除は iCloud 同期先の端末にも反映されます。アプリを削除すると端末内のデータは消えますが、iCloud 側に残ったデータは iOS の「設定」→「iCloud」からユーザーが管理できます。</p>
+
+  <h3>10. 医療行為ではありません</h3>
+  <p>本アプリは記録と支援の道具であり、病気の治療や性機能の改善などの医療効果を約束するものではありません。困ったときは専門機関にご相談ください。</p>
+
+  <h3>11. 本ポリシーの変更</h3>
+  <p>内容を変更する場合は、公式サイトでお知らせします。ご不明点は上記の連絡先までお問い合わせください。</p>
+
+  <hr>
+
+  <h2>English version</h2>
+  <p>RE:GENESIS (the "App") is an iPhone app for recording and supporting habit streaks. The App has no server and requires no account or sign-in.</p>
+
+  <h3>1. Data we collect — none</h3>
+  <p>The App does not send or collect your personal data to any external server (we aim for a "Data Not Collected" declaration on the App Store). The first version includes no analytics tools, advertising SDKs, or crash reporting.</p>
+
+  <h3>2. Data stored and where</h3>
+  <p>The following data is stored on your device and is never sent to any third-party server:</p>
+  <ul>
+    <li>Streak counter data: start date, current streak, best record, number of attempts</li>
+    <li>Daily check-ins (urge strength, mood, notes)</li>
+    <li>Watch check-in responses, SOS usage history, reset reasons</li>
+    <li>Milestone progress and settings (check-in interval, quiet hours, Face ID lock, etc.)</li>
+  </ul>
+  <p>Data is stored with SwiftData / UserDefaults, and shared with the widget only through App Groups on the same device.</p>
+
+  <h3>2-2. iCloud sync</h3>
+  <p>If you are signed in to iCloud, counter data, check-ins, and watch check-in history are synced between your own devices (iPhone / iPad) under the same Apple account through your private iCloud database via Apple CloudKit. Only you can access this area; the developer cannot view or retrieve your records. Settings are not synced and remain on each device. If iCloud is disabled, no sync occurs and data stays only on your device.</p>
+
+  <h3>3. Face ID lock</h3>
+  <p>Face ID lock uses iOS LocalAuthentication. Biometric data is processed on-device; the App never accesses, stores, or sends it.</p>
+
+  <h3>4. Notifications</h3>
+  <p>Watch check-ins use local notifications only, generated on your device. Notification text never names the specific habit. The App may receive silent pushes via Apple's push service (APNs) purely as a signal to trigger iCloud sync; these never contain any of your record data.</p>
+
+  <h3>5. Monitoring Mode Pro (Premium / v2 feature)</h3>
+  <ul>
+    <li>Screen checks run on-device: one frame every 30 seconds is analysed and discarded immediately. Images, screen content, and URLs are never saved or sent. Only the detection time is recorded.</li>
+    <li>Checks run only while a broadcast the user started manually is active. The App never watches the screen on its own. A recording indicator is shown at all times during a broadcast.</li>
+  </ul>
+
+  <h3>6. DNS blocking (Premium / v2 feature)</h3>
+  <p>DNS blocking connects to an encrypted DNS (DoH) resolver — CleanBrowsing Family or Cloudflare for Families (1.1.1.3). We operate no DNS server of our own and keep no DNS logs. DNS queries themselves do reach the chosen external resolver, so they are handled under that resolver's policy. DNS blocking works per domain and cannot stop posts inside social apps.</p>
+
+  <h3>7. Backup (JSON export / import)</h3>
+  <p>A backup is created only when you export it yourself from Settings, and it is saved wherever you choose in the share sheet. Importing replaces the data on your device. Nothing is sent to the cloud automatically (standard iPhone transfer / backup follows iOS behaviour).</p>
+
+  <h3>8. Purchases</h3>
+  <p>Premium purchases, cancellations, and restores go through Apple's StoreKit. The App never receives your payment card details.</p>
+
+  <h3>9. Deleting your data</h3>
+  <p>You can delete all data from "Delete all" in Settings (two-step confirmation; deletion cannot be undone). Deletion also propagates to your other synced devices. Deleting the App removes its on-device data; any data remaining in iCloud can be managed by you in iOS Settings → iCloud.</p>
+
+  <h3>10. Not a medical device</h3>
+  <p>The App is a recording and support tool. It does not promise to treat any illness or improve sexual function. If you are struggling, please consult a professional.</p>
+
+  <h3>11. Changes to this policy</h3>
+  <p>If this policy changes, we will announce it on the official website. For questions, contact us at the address above.</p>
+
+  <footer>
+    <p><a href="index.html">← RE:GENESIS Phoenix トップへ</a></p>
+  </footer>
+</div>
+</body>
+</html>
