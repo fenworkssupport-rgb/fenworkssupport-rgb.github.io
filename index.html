@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RE:GENESIS Phoenix — 生まれ変わる、習慣カウンター</title>
-<meta name="description" content="RE:GENESIS Phoenix — 「やめたい」を、ひとりで抱えないための習慣カウンター。金のフェニックス「フェン」と一緒に、今日を積み重ねていきます。">
+<meta name="description" content="RE:GENESIS Phoenix — 「やめる」は終わりじゃない。新しい自分のはじまり。金のフェニックス「フェン」と一緒に、生まれ変わっていく日々を数える習慣カウンター。">
 <style>
   body{margin:0;background:#0a0a0a;color:#f5f0e6;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.8}
   .wrap{max-width:720px;margin:0 auto;padding:48px 20px 64px}
@@ -18,18 +18,57 @@
   .note{font-size:.85em;color:#9a8f78}
   .card{border:1px solid #3a2f14;border-radius:12px;padding:16px 20px;margin-top:1.5em}
   footer{margin-top:3em;font-size:.85em;color:#9a8f78}
+  .dl{margin:1.6em 0}
+  .store-btn{display:inline-block;border:1px solid #b8860b;border-radius:12px;padding:10px 22px;color:#f6d365;text-decoration:none;font-weight:600;background:#141414}
+  .store-btn:hover{background:#1d1a10}
+  .hero{text-align:center;padding-top:8px}
+  .hero .icon{width:120px;height:120px;border-radius:27px}
+  .hero .catch{font-size:1.9em;line-height:1.45;font-weight:700;margin:.5em 0 .3em}
+  .hero .fen{width:min(400px,82%);border-radius:24px;margin-top:1.2em}
+  .msg p{margin:.9em 0}
+  .growth{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:1.2em}
+  .growth figure{margin:0;width:118px;text-align:center}
+  .growth img{width:118px;height:118px;object-fit:cover;border-radius:16px;border:1px solid #3a2f14}
+  .growth figcaption{font-size:.8em;color:#cfc4a8;margin-top:.3em;line-height:1.5}
+  .shots{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:1.2em}
+  .shots img{width:158px;border-radius:12px;border:1px solid #3a2f14}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <p class="tag">RE:GENESIS Phoenix</p>
-  <h1>生まれ変わる、<span class="gold">習慣カウンター</span></h1>
-  <p>「やめたい」を、ひとりで抱えないためのアプリです。日数を数えるだけでなく、金のフェニックス「フェン」と一緒に、今日を積み重ねていきます。</p>
+
+  <div class="hero">
+    <img class="icon" src="images/icon.png" alt="RE:GENESIS Phoenix アイコン">
+    <p class="tag">RE:GENESIS Phoenix</p>
+    <p class="catch">「やめる」は、終わりじゃない<br>新しい自分の、<span class="gold">はじまり</span></p>
+    <p>「やめたい」を、ひとりで抱えないための習慣カウンター<br>金のフェニックス「フェン」と一緒に、今日を積み重ねていきます</p>
+    <img class="fen" src="images/fen-hero-egg.webp" alt="金のフェニックス「フェン」の卵">
+    <div class="dl">
+      <a class="store-btn" href="https://apps.apple.com/app/re-genesis-phoenix/id6838151033">App Store でダウンロード（無料）</a>
+    </div>
+  </div>
+
+  <h2>「生まれ変わる」ということ</h2>
+  <div class="msg">
+    <p>「やめたい」と思えた時点で、あなたの中ではもう<br>新しい自分が目を覚ましています</p>
+    <p>だからこのアプリは、我慢した日数を数えません<br>数えるのは、<strong>生まれ変わっていく日々</strong></p>
+    <p>フェンが卵から少しずつ育つように、あなたも一日ずつ理想の自分に近づいていく<br>その歩みを隣で見守り続けるアプリです</p>
+  </div>
+
+  <h2>フェンの成長</h2>
+  <p>フェンは卵から始まり、継続の日数と毎日のチェックインで Lv1〜Lv12 まで育ちます。放置では育たず、チェックインが足りないと成長だけが止まりますが、ペナルティはありません。</p>
+  <div class="growth">
+    <figure><img src="images/fen-lv0.webp" alt="フェン（卵）"><figcaption>スタート<br>卵</figcaption></figure>
+    <figure><img src="images/fen-lv2.webp" alt="フェン Lv2"><figcaption>Lv2<br>3日</figcaption></figure>
+    <figure><img src="images/fen-lv5-silhouette.webp" alt="フェン Lv5（シルエット）"><figcaption>Lv5<br>30日</figcaption></figure>
+    <figure><img src="images/fen-lv9-silhouette.webp" alt="フェン Lv9（シルエット）"><figcaption>Lv9<br>180日</figcaption></figure>
+    <figure><img src="images/fen-lv12-silhouette.webp" alt="フェン Lv12（シルエット）"><figcaption>Lv12<br>730日</figcaption></figure>
+  </div>
+  <p class="note" style="text-align:center">Lv5以降の姿は、育ててからのお楽しみです。</p>
 
   <h2>できること（v1.0）</h2>
   <ul>
     <li>継続カウンター：開始日からの日数を、秒単位のウィジェットでも確認できます</li>
-    <li>フェンと一緒に育つ：フェンは卵から始まり、日数と毎日のチェックインで Lv1〜Lv12 まで育ちます（放置では育ちません。成長だけ止まり、ペナルティはありません）</li>
     <li>毎日のチェックイン：衝動の強さとメモを記録。メモは任意です</li>
     <li>見守りチェック：任意の間隔で「今は大丈夫？」と確認します</li>
     <li>監視モード Lite：見守りをもう少し手厚くしたいときに</li>
@@ -38,18 +77,28 @@
     <li>iCloud 同期：記録はあなたの iCloud 経由で iPhone と iPad の間にだけ同期されます</li>
     <li>Face ID ロックとバックアップ：記録は JSON で書き出せます</li>
   </ul>
-  <p>開発者のサーバーなし、アカウント登録なし。記録にアクセスできるのはあなただけです。</p>
-  <p>監視モード Pro は現在開発中です。できあがり次第、アップデートでお知らせします。</p>
+  <p>開発者のサーバーなし、アカウント登録なしで、記録にアクセスできるのはあなただけです。</p>
+  <p>監視モード Pro は現在開発中。できあがり次第、アップデートでお知らせします。</p>
+  <div class="shots">
+    <img src="images/shot-1.jpg" alt="ホーム画面">
+    <img src="images/shot-2.jpg" alt="SOS 呼吸タイマー">
+    <img src="images/shot-3.jpg" alt="記録画面">
+    <img src="images/shot-4.jpg" alt="マイルストーン画面">
+  </div>
 
   <div class="card">
     <h2 style="margin-top:0">サポート / Support</h2>
     <p>お問い合わせ：<strong>fenworks.support@gmail.com</strong></p>
     <p><a href="privacy.html">プライバシーポリシー（日英） / Privacy Policy</a></p>
-    <p class="note">本アプリは記録と支援の道具です。病気の治療や医療効果を約束するものではありません。困ったときは専門機関にご相談ください。</p>
+    <p class="note">本アプリは記録と支援のための道具で、病気の治療や医療効果を約束するものではありません。困ったときは専門機関にご相談ください。</p>
   </div>
 
   <h2>English</h2>
-  <p><strong>RE:GENESIS Phoenix — a fresh-start habit counter.</strong> You don't have to carry "I want to quit" alone. Count the days with Fen, a golden phoenix who grows with you.</p>
+  <p><strong>RE:GENESIS Phoenix — a fresh-start habit counter.</strong></p>
+  <div class="msg">
+    <p>Quitting isn't losing something. It's becoming who you want to be. The moment you think "I want to quit," a new you has already begun to wake up.</p>
+    <p>This app doesn't count days of endurance. It counts days of becoming. Fen grows from an egg, one day at a time — and so do you.</p>
+  </div>
   <ul>
     <li>Streak counter, including a widget that shows elapsed time</li>
     <li>Grow with Fen: from an egg to Lv12, by days and daily check-ins (no penalty — only growth pauses)</li>
@@ -58,9 +107,12 @@
     <li>iCloud sync between your iPhone and iPad, Face ID lock, and JSON backup</li>
   </ul>
   <p>No developer server, no account. Only you can access your records. Monitoring Mode Pro is in development and will be announced in a future update.</p>
+  <div class="dl">
+    <a class="store-btn" href="https://apps.apple.com/app/re-genesis-phoenix/id6838151033">Download on the App Store (Free)</a>
+  </div>
 
   <footer>
-    <p>運営者：Fen Works ／ 最終更新日：2026年11月25日</p>
+    <p>運営者：Fen Works ／ 最終更新日：2026年11月26日</p>
     <p>© RE:GENESIS Phoenix</p>
   </footer>
 </div>
